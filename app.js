@@ -1,6 +1,5 @@
 
 var token = '245346123.1677ed0.e8c175e634d049b3afc9674e108f8365',
-userId  = '245346123',
 numPhotos = 8;
 $.ajax({
       url: 'https://api.instagram.com/v1/users/self/media/recent',
