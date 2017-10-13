@@ -8,7 +8,7 @@ $.ajax({
       data: {access_token: token, count: numPhotos},
       success: function(data){
         for( var x in data.data ){
-          $('.carousel-inner').append('<div class="item "><img alt="photosinstas" style="width:50%;" src="'+data.data[x].images.low_resolution.url+'"/></div>');
+          $('.carousel-inner').append('<div class="item "><img class="img-responsive center-block" alt="photosinstas" style="width:20%;" src="'+data.data[x].images.low_resolution.url+'"/></div>');
           $('#firstInner div:first').addClass('item active');
 
           console.log(x);
